@@ -1,12 +1,7 @@
-.App {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.app-itemsContainer {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
     height: 100vh;
-    position: relative;
-    top: 0;
-    background-image: url(./imgs/download.png);
-    color:#fff
 }
 .logo{
     position: fixed;
