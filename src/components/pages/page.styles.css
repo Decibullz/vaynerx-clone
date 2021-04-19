@@ -1,0 +1,78 @@
+.item {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.item-container {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.item-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1
+}
+
+.item-textDesc {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.item-lowerThird {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-buttons {
+    display: flex;
+}
+
+.item-expand {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+small{
+    font-size: 75%;
+}
+
+
+
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+}
+
+@keyframes bounce{
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
