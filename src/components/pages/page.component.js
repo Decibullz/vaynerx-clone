@@ -23,13 +23,15 @@ const Page = ({ logo, desc, backgroundImg, textColor, first, last }) => {
             </div>
           )}
         </div>
-        {first ? (
-          <BouncingArrows className="animated infinite bounce" />
-        ) : last ? (
-          <p></p>
-        ) : (
-          <BouncingArrows />
-        )}
+        <div className="item-expand">
+          {first ? (
+            <BouncingArrows className="animated infinite bounce" />
+          ) : last ? (
+            <p></p>
+          ) : (
+            <BouncingArrows />
+          )}
+        </div>
       </div>
     </div>
   )
